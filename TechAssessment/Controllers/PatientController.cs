@@ -31,6 +31,13 @@ namespace TechAssessment.Controllers
         }
 
         [HttpGet]
+        [Route("test")]
+        public string test()
+        {
+            return "server up";
+        }
+
+        [HttpGet]
         [Route("byid/{id}")]
         public Patient GetById(int id)
         {
